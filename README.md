@@ -140,6 +140,21 @@ Build a small React app where users can:
 
 ---
 
+## Step 8 🛠️
+
+- Cleared default Vite styles from `index.css`
+- Kept only a simple body reset
+
+**Why it matters**
+- Prevents starter template styles from interfering with the lab layout
+- Makes the app layout behave more predictably
+
+**Engineering principle**
+- Debugging CSS conflicts
+- Clean global styles
+
+---
+
 ## Key Takeaways
 
 - React apps often start from a template, but real work begins after cleanup
