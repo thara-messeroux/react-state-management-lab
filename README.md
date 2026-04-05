@@ -32,6 +32,8 @@ Build a small React app where users can:
 **Engineering principle**
 - Project setup
 
+---
+
 ### Step 2 🐢
 - Removed the default Vite starter code
 - Updated ESLint rules for the lab
@@ -47,6 +49,8 @@ Build a small React app where users can:
 - Linting
 - Clean project setup
 
+---
+
 ## Step 3 🦊
 
 - Replaced `App.css` with the lab starter styles
@@ -61,6 +65,8 @@ Build a small React app where users can:
 - UI foundation
 - Separation of structure and styling
 
+---
+
 ## Step 4 🐼
 
 - Created a `fighters` array with sample data
@@ -74,6 +80,8 @@ Build a small React app where users can:
 **Engineering principle**
 - Rendering lists
 - Data-driven UI
+
+---
 
 ## Step 5 🐯
 
@@ -91,6 +99,28 @@ Build a small React app where users can:
 **Engineering principle**
 - State management
 - Single source of truth
+
+---
+
+## Step 6 🐙
+
+- Added `handleAddFighter` function
+- Added "Add" button for each fighter
+- Updated state when user clicks:
+  - adds fighter to team
+  - removes fighter from available list
+  - decreases money
+
+**Why it matters**
+- Enables user interaction
+- Connects UI actions to state updates
+
+**Engineering principle**
+- Event handling
+- State updates
+- Immutability
+
+---
 
 ## Key Takeaways
 

@@ -24,6 +24,23 @@ const App = () => {
   const [money, setMoney] = useState(100);
   // starting money
 
+  // Handles adding a fighter to the team
+  const handleAddFighter = (fighter) => {
+    // Prevent buying if not enough money
+    if (money < fighter.price) return;
+
+    // Add fighter to team
+    setTeam([...team, fighter]);
+    // WHY → create a NEW array (immutability)
+
+    // Remove fighter from available list
+    setFighters(fighters.filter((f) => f.id !== fighter.id));
+    // WHY → cannot pick same fighter twice
+
+    // Decrease money
+    setMoney(money - fighter.price);
+  };
+
   return (
     <>
       <h1>Reactville Fighters</h1>
@@ -39,6 +56,10 @@ const App = () => {
             <p>Price: {fighter.price}</p>
             <p>Strength: {fighter.strength}</p>
             <p>Agility: {fighter.agility}</p>
+
+            {/* Button to add fighter */}
+            <button onClick={() => handleAddFighter(fighter)}>Add</button>
+            
           </li>
         ))}
       </ul>
@@ -53,7 +74,7 @@ const App = () => {
       </ul>
     </>
   );
-};
+};;
 
 export default App;
 
