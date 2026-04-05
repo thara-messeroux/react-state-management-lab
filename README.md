@@ -61,6 +61,37 @@ Build a small React app where users can:
 - UI foundation
 - Separation of structure and styling
 
+## Step 4 🐼
+
+- Created a `fighters` array with sample data
+- Used `.map()` to render each fighter in a list
+- Displayed fighter name, price, strength, and agility
+
+**Why it matters**
+- Allows the UI to display dynamic data instead of static text
+- Prepares the app for user interaction in later steps
+
+**Engineering principle**
+- Rendering lists
+- Data-driven UI
+
+## Step 5 🐯
+
+- Added `useState` to manage app data
+- Created state for:
+  - fighters
+  - team
+  - money
+- Rendered money and team sections
+
+**Why it matters**
+- Allows the app to respond to user actions
+- Enables dynamic updates in the UI
+
+**Engineering principle**
+- State management
+- Single source of truth
+
 ## Key Takeaways
 
 - React apps often start from a template, but real work begins after cleanup

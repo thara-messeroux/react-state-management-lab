@@ -1,9 +1,11 @@
 // src/App.jsx
 
+import { useState } from "react";
 import "./App.css";
 
+// Static data (starting point)
 // This is our data (like a mini database)
-const fighters = [
+const initialFighters = [
   { id: 1, name: "Ryu", price: 12, strength: 6, agility: 4 },
   { id: 2, name: "Ken", price: 10, strength: 5, agility: 5 },
   { id: 3, name: "Chun-Li", price: 14, strength: 4, agility: 7 },
@@ -11,10 +13,24 @@ const fighters = [
 ];
 
 const App = () => {
+  // STATE = app memory
+
+  const [fighters, setFighters] = useState(initialFighters);
+  // fighters available to pick from
+
+  const [team, setTeam] = useState([]);
+  // selected fighters
+
+  const [money, setMoney] = useState(100);
+  // starting money
+
   return (
     <>
       <h1>Reactville Fighters</h1>
 
+      <h2>Money: {money}</h2>
+
+      <h2>Available Fighters</h2>
       {/* We loop through fighters and display each one */}
       <ul>
         {fighters.map((fighter) => (
@@ -23,6 +39,15 @@ const App = () => {
             <p>Price: {fighter.price}</p>
             <p>Strength: {fighter.strength}</p>
             <p>Agility: {fighter.agility}</p>
+          </li>
+        ))}
+      </ul>
+
+      <h2>Team</h2>
+      <ul>
+        {team.map((fighter) => (
+          <li key={fighter.id}>
+            <h2>{fighter.name}</h2>
           </li>
         ))}
       </ul>
