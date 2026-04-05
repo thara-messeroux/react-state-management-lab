@@ -47,6 +47,20 @@ Build a small React app where users can:
 - Linting
 - Clean project setup
 
+## Step 3 🦊
+
+- Replaced `App.css` with the lab starter styles
+- Added spacing around the app with `#root`
+- Set up `ul` and `li` styles for future fighter cards
+
+**Why it matters**
+- Prepares the layout before rendering the real app content
+- Makes future fighter cards easier to display cleanly
+
+**Engineering principle**
+- UI foundation
+- Separation of structure and styling
+
 ## Key Takeaways
 
 - React apps often start from a template, but real work begins after cleanup
