@@ -205,6 +205,21 @@ Build a small React app where users can:
 
 ---
 
+## Step 12 🐢
+
+- Added fighter images to the Available Fighters section
+- Added fighter images to the Team section
+
+**Why it matters**
+- Matches the official lab requirement for character display
+- Makes each fighter card more complete and visually clear
+
+**Engineering principle**
+- Data-driven UI
+- Spec alignment
+
+---
+
 ## Key Takeaways
 
 - React apps often start from a template, but real work begins after cleanup

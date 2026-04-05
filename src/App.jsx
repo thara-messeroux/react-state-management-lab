@@ -155,6 +155,7 @@ const App = () => {
       <ul>
         {fighters.map((fighter) => (
           <li key={fighter.id}>
+            <img src={fighter.img} alt={fighter.name} width="150" />
             <h2>{fighter.name}</h2>
             <p>Price: {fighter.price}</p>
             <p>Strength: {fighter.strength}</p>
@@ -170,6 +171,7 @@ const App = () => {
       <ul>
         {team.map((fighter) => (
           <li key={fighter.id}>
+            <img src={fighter.img} alt={fighter.name} width="150" />
             <h2>{fighter.name}</h2>
             <p>Price: {fighter.price}</p>
             <p>Strength: {fighter.strength}</p>
