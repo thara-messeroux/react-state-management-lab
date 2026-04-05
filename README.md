@@ -190,6 +190,21 @@ Build a small React app where users can:
 
 ---
 
+## Step 11 🐢
+
+- Replaced the sample fighter data with the official GA `zombieFighters` data
+- Updated the fighters state to use `zombieFighters`
+
+**Why it matters**
+- Aligns the project with the official lab requirements
+- Keeps the logic the same while using the correct dataset
+
+**Engineering principle**
+- Spec alignment
+- Data-driven UI
+
+---
+
 ## Key Takeaways
 
 - React apps often start from a template, but real work begins after cleanup
