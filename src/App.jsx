@@ -51,6 +51,18 @@ const App = () => {
     return sum + fighter.agility;
   }, 0);
 
+  // Handles removing a fighter from the team
+  const handleRemoveFighter = (fighter) => {
+    // Remove from team
+    setTeam(team.filter((f) => f.id !== fighter.id));
+
+    // Add back to available fighters
+    setFighters([...fighters, fighter]);
+
+    // Refund money
+    setMoney(money + fighter.price);
+  };
+
   return (
     <>
       <h1>Reactville Fighters</h1>
@@ -82,12 +94,18 @@ const App = () => {
         {team.map((fighter) => (
           <li key={fighter.id}>
             <h2>{fighter.name}</h2>
+            <p>Price: {fighter.price}</p>
+            <p>Strength: {fighter.strength}</p>
+            <p>Agility: {fighter.agility}</p>
+
+            {/* NEW */}
+            <button onClick={() => handleRemoveFighter(fighter)}>Remove</button>
           </li>
         ))}
       </ul>
     </>
   );
-};;
+};;;
 
 export default App;
 

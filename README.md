@@ -155,7 +155,7 @@ Build a small React app where users can:
 
 ---
 
-## Step 8 🐼
+## Step 9 🐼
 
 - Added `totalAgility` using `reduce()`
 - Displayed total agility in the UI
@@ -167,6 +167,26 @@ Build a small React app where users can:
 **Engineering principle**
 - Derived data
 - State-driven UI
+
+---
+
+## Step 10 🐸
+
+- Added `handleRemoveFighter` function
+- Added "Remove" button in team section
+- Updated state when removing:
+  - removes fighter from team
+  - adds fighter back to available list
+  - refunds money
+
+**Why it matters**
+- Allows reversing user actions
+- Completes full interaction cycle
+
+**Engineering principle**
+- CRUD (Delete)
+- State synchronization
+- Event handling
 
 ---
 
