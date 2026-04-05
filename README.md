@@ -21,6 +21,8 @@ Build a small React app where users can:
 
 ## Progress Log
 
+---
+
 ### Step 1 🐣
 - Created the React app with Vite
 - Installed project dependencies
@@ -119,6 +121,22 @@ Build a small React app where users can:
 - Event handling
 - State updates
 - Immutability
+
+---
+
+## Step 7 🦁
+
+- Added a `totalStrength` variable using `reduce()`
+- Displayed total team strength in the UI
+- Set the default total to `0` when the team is empty
+
+**Why it matters**
+- Shows a live calculated value based on current state
+- Helps users understand the team’s current power
+
+**Engineering principle**
+- Derived data
+- State-based UI
 
 ---
 

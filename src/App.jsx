@@ -41,6 +41,10 @@ const App = () => {
     setMoney(money - fighter.price);
   };
 
+  const totalStrength = team.reduce((sum, fighter) => {
+    return sum + fighter.strength;
+  }, 0);
+
   return (
     <>
       <h1>Reactville Fighters</h1>
@@ -59,7 +63,7 @@ const App = () => {
 
             {/* Button to add fighter */}
             <button onClick={() => handleAddFighter(fighter)}>Add</button>
-            
+
           </li>
         ))}
       </ul>
