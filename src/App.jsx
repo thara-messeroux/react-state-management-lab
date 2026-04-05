@@ -168,7 +168,7 @@ const App = () => {
       </ul>
 
       <h2>Team</h2>
-      // If team is empty, show message. Otherwise, show team members
+      {/* If team is empty, show message. Otherwise, show team members */}
       {team.length === 0 ? (
         <p>Pick some team members</p>
       ) : (
