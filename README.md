@@ -155,6 +155,21 @@ Build a small React app where users can:
 
 ---
 
+## Step 8 🐼
+
+- Added `totalAgility` using `reduce()`
+- Displayed total agility in the UI
+
+**Why it matters**
+- Shows additional derived data from state
+- Improves visibility of team stats
+
+**Engineering principle**
+- Derived data
+- State-driven UI
+
+---
+
 ## Key Takeaways
 
 - React apps often start from a template, but real work begins after cleanup

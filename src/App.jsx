@@ -46,6 +46,11 @@ const App = () => {
     return sum + fighter.strength;
   }, 0);
 
+  // Calculate total agility of the team
+  const totalAgility = team.reduce((sum, fighter) => {
+    return sum + fighter.agility;
+  }, 0);
+
   return (
     <>
       <h1>Reactville Fighters</h1>
@@ -53,6 +58,8 @@ const App = () => {
       <h2>Money: {money}</h2>
 
       <h2>Team Strength: {totalStrength}</h2>
+
+      <h2>Team Agility: {totalAgility}</h2>
 
       <h2>Available Fighters</h2>
       {/* We loop through fighters and display each one */}
