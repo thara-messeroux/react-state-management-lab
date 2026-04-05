@@ -220,6 +220,22 @@ Build a small React app where users can:
 
 ---
 
+## Step 13 🐣
+
+- Added conditional rendering for the empty team state
+- Displayed `Pick some team members` when no fighters are selected
+- Cleaned the component ending syntax
+
+**Why it matters**
+- Matches the final GA lab requirement
+- Improves clarity when the team is empty
+
+**Engineering principle**
+- Conditional rendering
+- UI state feedback
+
+---
+
 ## Key Takeaways
 
 - React apps often start from a template, but real work begins after cleanup

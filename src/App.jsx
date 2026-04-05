@@ -168,23 +168,28 @@ const App = () => {
       </ul>
 
       <h2>Team</h2>
-      <ul>
-        {team.map((fighter) => (
-          <li key={fighter.id}>
-            <img src={fighter.img} alt={fighter.name} width="150" />
-            <h2>{fighter.name}</h2>
-            <p>Price: {fighter.price}</p>
-            <p>Strength: {fighter.strength}</p>
-            <p>Agility: {fighter.agility}</p>
+      // If team is empty, show message. Otherwise, show team members
+      {team.length === 0 ? (
+        <p>Pick some team members</p>
+      ) : (
+        <ul>
+          {team.map((fighter) => (
+            <li key={fighter.id}>
+              <img src={fighter.img} alt={fighter.name} width="150" />
+              <h2>{fighter.name}</h2>
+              <p>Price: {fighter.price}</p>
+              <p>Strength: {fighter.strength}</p>
+              <p>Agility: {fighter.agility}</p>
 
-            {/* NEW */}
-            <button onClick={() => handleRemoveFighter(fighter)}>Remove</button>
-          </li>
-        ))}
-      </ul>
+              {/* NEW */}
+              <button onClick={() => handleRemoveFighter(fighter)}>Remove</button>
+            </li>
+          ))}
+        </ul>
+      )}
     </>
   );
-};;;
+};
 
 export default App;
 
