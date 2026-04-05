@@ -1,16 +1,54 @@
-# React + Vite
+# React State Management Lab
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React lab focused on learning how to manage and update state through user interactions.
 
-Currently, two official plugins are available:
+## Objective
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Build a small React app where users can:
+- add fighters to a team
+- remove fighters from a team
+- track available money
+- display total team strength
+- display total team agility
 
-## React Compiler
+## Tech Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- CSS
+- ESLint
 
-## Expanding the ESLint configuration
+## Progress Log
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Step 1 🐣
+- Created the React app with Vite
+- Installed project dependencies
+- Started the development server
+
+**Why it matters**
+- Sets up the project foundation so the app can run locally
+
+**Engineering principle**
+- Project setup
+
+### Step 2 🐢
+- Removed the default Vite starter code
+- Updated ESLint rules for the lab
+- Replaced the starter UI with a simple `Hello world!`
+- Added the lab starter CSS
+
+**Why it matters**
+- Creates a clean starting point for building the app
+- Reduces unnecessary warnings during development
+
+**Engineering principle**
+- Codebase cleanup
+- Linting
+- Clean project setup
+
+## Key Takeaways
+
+- React apps often start from a template, but real work begins after cleanup
+- ESLint helps maintain code quality and consistency
+- Clean setup makes future steps easier and less confusing
