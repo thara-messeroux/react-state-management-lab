@@ -1,23 +1,25 @@
+/* page */
 body {
   margin: 0;
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #1d1d1f;
-  background: linear-gradient(180deg, #f7f8fc, #eef1f7);
+  color: #0f2f33;
+  background: linear-gradient(180deg, #eef6f4, #dfeceb);
 }
 
-/* soft colorful glow background */
+/* soft blue-green + gold glow */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(circle at 20% 20%, rgba(255, 120, 200, 0.35), transparent 30%),
-    radial-gradient(circle at 80% 30%, rgba(0, 200, 255, 0.25), transparent 30%),
-    radial-gradient(circle at 50% 80%, rgba(255, 200, 0, 0.25), transparent 30%);
+    radial-gradient(circle at 20% 20%, rgba(26, 120, 122, 0.16), transparent 30%),
+    radial-gradient(circle at 80% 25%, rgba(8, 76, 84, 0.14), transparent 28%),
+    radial-gradient(circle at 50% 75%, rgba(196, 160, 91, 0.14), transparent 24%);
   filter: blur(60px);
   z-index: -1;
 }
 
+/* app wrapper */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -26,19 +28,23 @@ body::before {
 
 /* headings */
 h1 {
+  margin: 0 0 16px;
   font-size: 2.6rem;
-  margin-bottom: 16px;
+  letter-spacing: -0.04em;
+  color: #10363b;
 }
 
 h2 {
-  margin: 22px 0 12px;
+  margin: 24px 0 12px;
+  font-size: 1.2rem;
+  color: #18474d;
 }
 
-/* stat pills (money / strength / agility) */
+/* top stats */
 .stats-row {
   display: flex;
-  gap: 14px;
   flex-wrap: wrap;
+  gap: 12px;
   margin-bottom: 20px;
 }
 
@@ -46,17 +52,21 @@ h2 {
   padding: 10px 14px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  font-weight: 500;
+  border: 1px solid rgba(16, 54, 59, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 24px rgba(16, 54, 59, 0.08);
+  color: #12393e;
+  font-weight: 600;
 }
 
-/* cards layout */
+/* card grid */
 ul {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
   padding: 0;
+  margin: 0 0 28px;
 }
 
 /* fighter card */
@@ -64,50 +74,67 @@ li {
   list-style: none;
   width: 180px;
   padding: 14px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(14px);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
-  transition: transform 0.15s ease;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(16, 54, 59, 0.08);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 10px 28px rgba(16, 54, 59, 0.08);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
 li:hover {
   transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(16, 54, 59, 0.12);
 }
 
-/* image */
+/* fighter image */
 img {
   width: 100%;
-  border-radius: 14px;
-  margin-bottom: 10px;
+  display: block;
+  border-radius: 18px;
+  margin-bottom: 12px;
 }
 
-/* text */
+/* card text */
 li p {
   margin: 4px 0;
-  font-size: 0.9rem;
+  color: #2f5559;
+  line-height: 1.4;
 }
 
-/* button */
+/* buttons */
 button {
   width: 100%;
   margin-top: 10px;
-  padding: 10px;
-  border-radius: 999px;
+  padding: 10px 14px;
   border: none;
-  background: linear-gradient(135deg, #ff9898, #ff5cdc);
-  color: white;
-  font-weight: 600;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #176c73, #0f5158);
+  color: #ffffff;
+  font-weight: 700;
   cursor: pointer;
+  box-shadow: 0 8px 18px rgba(15, 81, 88, 0.16);
 }
 
-/* empty state */
+button:hover {
+  filter: brightness(1.05);
+}
+
+button:focus-visible {
+  outline: 3px solid #c4a05b;
+  outline-offset: 3px;
+}
+
+/* empty team message */
 .team-empty {
   display: inline-block;
   padding: 12px 16px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  margin-top: 6px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(16, 54, 59, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 24px rgba(16, 54, 59, 0.06);
+  color: #295056;
 }
