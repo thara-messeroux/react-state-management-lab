@@ -36,9 +36,8 @@ Build a small React app where users can:
 
 ## How to run
 
-```bash
-npm install
-npm run dev
+- ```npm install```
+- ```npm run dev```
 
 ## Tech Used
 
