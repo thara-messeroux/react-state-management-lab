@@ -50,8 +50,6 @@ Build a small React app where users can:
 
 ## Progress Log
 
----
-
 ### Step 1 🐣
 - Created the React app with Vite
 - Installed project dependencies
