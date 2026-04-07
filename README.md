@@ -1,6 +1,22 @@
-# React State Management Lab
+
+# Reactville Fighters
+
+A simple React app where you build a team of fighters using a budget.
+
+## React State Management Lab
 
 A React lab focused on learning how to manage and update state through user interactions.
+
+## What it does
+
+- You start with a fixed amount of money
+- You can add fighters to your team
+- Each fighter has:
+  - price
+  - strength
+  - agility
+- Your team stats update automatically
+- You can remove fighters and get your money back
 
 ## Objective
 
@@ -11,6 +27,19 @@ Build a small React app where users can:
 - display total team strength
 - display total team agility
 
+## Features
+
+- useState for managing data
+- Dynamic UI updates
+- Conditional rendering (empty team message)
+- Simple, clean UI with a glass-style design
+
+## How to run
+
+```bash
+npm install
+npm run dev
+
 ## Tech Used
 
 - React
@@ -18,6 +47,7 @@ Build a small React app where users can:
 - JavaScript
 - CSS
 - ESLint
+
 
 ## Progress Log
 
